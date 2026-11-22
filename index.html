@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="José Hipólito Baez — International Commerce (Fundació UAB), Maritime Procurement, Port Operations (Forma't al Port), and Python/AI Supply Chain Analytics.">
+  <title>José Hipólito Baez | Maritime Procurement, Supply Chain &amp; AI</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "José Hipólito Baez",
+    "jobTitle": "International Commerce, Maritime Procurement & Supply Chain Analytics",
+    "homeLocation": {
+      "@type": "Place",
+      "name": "Terrassa, Barcelona, Spain"
+    },
+    "alumniOf": [
+      {
+        "@type": "EducationalOrganization",
+        "name": "Fundació UAB"
+      },
+      {
+        "@type": "EducationalOrganization",
+        "name": "Escola Europea - Intermodal Transport (Forma't al Port)"
+      }
+    ],
+    "knowsAbout": [
+      "Maritime Finance",
+      "Maritime Corporate Procurement",
+      "Supply Chain Analytics",
+      "International Trade Compliance",
+      "Incoterms 2020",
+      "Customs DUA",
+      "Python",
+      "Pandas",
+      "Sage ERP"
+    ],
+    "knowsLanguage": [
+      "Spanish",
+      "English",
+      "Catalan",
+      "Japanese",
+      "French",
+      "Italian",
+      "Chinese",
+      "Greek",
+      "German",
+      "Portuguese",
+      "Russian"
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/in/jose-hipolito-baez",
+      "https://github.com/HipolitoB"
+    ]
+  }
+  </script>
+  <style>
+    :root {
+      --bg-light: #f8fafc;
+      --bg-dark: #0b1220;
+      --surface-light: #ffffff;
+      --surface-dark: #131d33;
+      --text-light: #0f172a;
+      --text-dark: #e2e8f0;
+      --muted-light: #475569;
+      --muted-dark: #94a3b8;
+      --border-light: #cbd5e1;
+      --border-dark: #253352;
+      --accent-light: #0f4c81;
+      --accent-dark: #60a5fa;
+      --accent-fg-light: #ffffff;
+      --accent-fg-dark: #0b1220;
+
+      --bg: var(--bg-light);
+      --surface: var(--surface-light);
+      --text: var(--text-light);
+      --muted: var(--muted-light);
+      --border: var(--border-light);
+      --accent: var(--accent-light);
+      --accent-fg: var(--accent-fg-light);
+
+      color-scheme: light dark;
+      accent-color: var(--accent);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: var(--bg-dark);
+        --surface: var(--surface-dark);
+        --text: var(--text-dark);
+        --muted: var(--muted-dark);
+        --border: var(--border-dark);
+        --accent: var(--accent-dark);
+        --accent-fg: var(--accent-fg-dark);
+      }
+    }
+
+    @supports (color: light-dark(white, black)) {
+      :root {
+        --bg: light-dark(var(--bg-light), var(--bg-dark));
+        --surface: light-dark(var(--surface-light), var(--surface-dark));
+        --text: light-dark(var(--text-light), var(--text-dark));
+        --muted: light-dark(var(--muted-light), var(--muted-dark));
+        --border: light-dark(var(--border-light), var(--border-dark));
+        --accent: light-dark(var(--accent-light), var(--accent-dark));
+        --accent-fg: light-dark(var(--accent-fg-light), var(--accent-fg-dark));
+      }
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      background-color: var(--bg);
+      color: var(--text);
+    }
+
+    .visually-hidden:where(:not(:focus-within, :active)) {
+      position: absolute !important;
+      clip-path: inset(50%) !important;
+      overflow: hidden !important;
+      width: 1px !important;
+      height: 1px !important;
+      margin: -1px !important;
+      padding: 0 !important;
+      border: 0 !important;
+      white-space: nowrap !important;
+    }
+
+    .skip-link:focus-visible {
+      position: fixed;
+      top: 0.75rem;
+      left: 0.75rem;
+      z-index: 100;
+      padding: 0.6rem 1rem;
+      background: var(--accent);
+      color: var(--accent-fg);
+      border-radius: 0.375rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    :where(a:any-link, button):focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 3px;
+    }
+
+    .container {
+      width: min(100% - 2rem, 60rem);
+      margin-inline: auto;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      background-color: var(--surface);
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-block: 0.9rem;
+    }
+
+    .brand {
+      font-weight: 700;
+      color: var(--text);
+      text-decoration: none;
+      min-block-size: 44px;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.25rem;
+    }
+
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      min-block-size: 44px;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    main {
+      padding-block: 2.5rem 3.5rem;
+    }
+
+    section {
+      margin-block-start: 2.75rem;
+    }
+
+    .hero {
+      margin-block-start: 0;
+      padding: 2rem;
+      background-color: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 0.75rem;
+    }
+
+    .eyebrow {
+      margin: 0 0 0.5rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--accent);
+    }
+
+    h1 {
+      margin: 0 0 0.75rem;
+      font-size: clamp(1.85rem, 3.2vw, 2.5rem);
+      line-height: 1.2;
+    }
+
+    h2 {
+      margin: 0 0 1rem;
+      font-size: 1.35rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.4rem;
+    }
+
+    h3 {
+      margin: 0 0 0.4rem;
+      font-size: 1.05rem;
+    }
+
+    .lead {
+      margin: 0 0 1.25rem;
+      color: var(--muted);
+      max-width: 65ch;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-block-size: 44px;
+      padding: 0.55rem 1.15rem;
+      border-radius: 0.5rem;
+      font-weight: 600;
+      text-decoration: none;
+      border: 1px solid var(--accent);
+    }
+
+    .btn-primary {
+      background-color: var(--accent);
+      color: var(--accent-fg);
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      color: var(--accent);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(16.5rem, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      background-color: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 0.65rem;
+      padding: 1.2rem;
+    }
+
+    .card p, .card ul {
+      margin: 0.5rem 0 0;
+      color: var(--muted);
+    }
+
+    .card ul {
+      padding-left: 1.2rem;
+    }
+
+    .meta {
+      font-size: 0.875rem;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .clean-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 0.75rem;
+    }
+
+    .clean-list li {
+      background-color: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 0.5rem;
+      padding: 0.9rem 1.1rem;
+    }
+
+    .inline-link {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding-block: 1.5rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="#main-content" class="skip-link visually-hidden">Skip to main content</a>
+    <nav aria-label="Primary" class="container">
+      <a href="#main-content" class="brand">José Hipólito Baez</a>
+      <ul>
+        <li><a href="#highlights">Highlights</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#languages">Languages</a></li>
+        <li><a href="#connect">Connect</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">Terrassa, Barcelona · International Commerce &amp; Supply Chain Analytics</p>
+      <h1 id="main-content" tabindex="-1">José Hipólito Baez</h1>
+      <p class="lead">
+        Dual-Intensive International Commerce candidate at <strong>Fundació UAB</strong> with port operations training
+        (<strong>Forma't al Port</strong>) and hands-on purchasing, reconciliation, and Python/Pandas automation experience.
+        Building toward <strong>Maritime Finance</strong>, <strong>Corporate Procurement</strong>, and <strong>Supply Chain AI</strong>.
+      </p>
+      <div class="actions">
+        <a class="btn btn-primary" href="https://www.linkedin.com/in/jose-hipolito-baez" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+        <a class="btn btn-secondary" href="https://github.com/HipolitoB" target="_blank" rel="noopener noreferrer">GitHub (@HipolitoB)</a>
+      </div>
+    </section>
+
+    <section id="highlights">
+      <h2>Verified Highlights</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Fundació UAB — CFGS International Commerce</h3>
+          <p class="meta">2025–2027 · Bilingual (Catalan / English) · Dual Intensive</p>
+          <p>Year 1 GPA: <strong>8.3/10</strong> · Year 2 GPA: <strong>9.5/10</strong>. Core modules in Incoterms 2020, customs DUA, international purchasing, transport logistics, and trade finance.</p>
+        </article>
+        <article class="card">
+          <h3>Forma't al Port — Port of Barcelona</h3>
+          <p class="meta">Escola Europea - Intermodal Transport · 2026</p>
+          <p>Operational certification covering maritime supply chains, container terminal operations, intermodal corridors, and customs documentation.</p>
+        </article>
+        <article class="card">
+          <h3>Rosario BZ — Logistics &amp; Purchasing Support</h3>
+          <p class="meta">Textile Sector · Argentina · 2023–2025</p>
+          <ul>
+            <li>Purchase orders and inventory tracking across <strong>500+ SKUs</strong>.</li>
+            <li>Reconciled supplier invoices vs. delivery notes in Sage ERP: <strong>-18% discrepancies</strong>.</li>
+            <li>Automated daily CSV stock alerts in Python/Pandas: <strong>~4 hrs/week saved</strong>.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Technical &amp; AI Foundations</h3>
+          <p class="meta">Harvard CS50x (Completed) · Ongoing AI Track</p>
+          <p>Python, Pandas, Advanced Excel, Sage ERP. Actively completing Elements of AI (Intro &amp; Building AI), IBM SkillsBuild, and Anthropic Academy.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects &amp; Technical Work</h2>
+      <ul class="clean-list" role="list">
+        <li>
+          <h3><a class="inline-link" href="https://github.com/HipolitoB/ai-learning-log" target="_blank" rel="noopener noreferrer">ai-learning-log</a></h3>
+          <p>Structured AI study notes and Python route-optimization solvers (minimum CO₂ maritime legs across multi-port routes) tracking Elements of AI, IBM SkillsBuild, and Anthropic Academy.</p>
+        </li>
+        <li>
+          <h3><a class="inline-link" href="https://github.com/HipolitoB/vins-andins" target="_blank" rel="noopener noreferrer">vins-andins</a></h3>
+          <p>International market entry and export strategy project for high-altitude Salta wines targeting UK and European trade lanes.</p>
+        </li>
+        <li>
+          <h3>Idescat Official CPI Statistical Automation (2026)</h3>
+          <p>Automated Excel &amp; Word statistical reporting pipeline transforming official Catalan CPI datasets into formula-driven comparison tables, charts, and bilingual press releases.</p>
+        </li>
+        <li>
+          <h3>2026–2027 Maritime Portfolio Roadmap</h3>
+          <p>Building three synthetic open-source trade tools: (1) 3-Way PO &amp; Invoice Reconciliation Engine, (2) Voyage Charter TCE &amp; EU-ETS Cashflow Simulator, and (3) AI Charterparty / RFQ Pre-Audit Validator.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="languages">
+      <h2>Multilingual Profile</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Business &amp; Working Fluency</h3>
+          <ul>
+            <li><strong>Spanish:</strong> Native (C2)</li>
+            <li><strong>English:</strong> Advanced (C1)</li>
+            <li><strong>Catalan:</strong> Bilingual Academic &amp; Professional Use (B2+)</li>
+            <li><strong>Japanese:</strong> Business Study — Asociación Japonesa de Salta 2022–2025 (B2 active / C1 comprehension)</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Additional Reading &amp; Comprehension</h3>
+          <p>Extensive cross-family reading and listening immersion (verified via Anki &amp; LingQ logs) supporting multilingual document triage in:</p>
+          <p><strong>French · Italian · Chinese · Greek · German · Portuguese · Russian</strong></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="connect">
+      <h2>Connect</h2>
+      <p class="lead">Open to part-time / dual-intensive opportunities in <strong>Barcelona</strong> in international procurement, customs &amp; trade compliance, maritime operations, or supply chain analytics.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="https://www.linkedin.com/in/jose-hipolito-baez" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
+        <a class="btn btn-secondary" href="https://github.com/HipolitoB" target="_blank" rel="noopener noreferrer">Follow on GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>José Hipólito Baez · Terrassa, Barcelona · Canonical Profile Hub</p>
+    </div>
+  </footer>
+</body>
+</html>
