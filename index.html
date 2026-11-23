@@ -58,20 +58,20 @@
   </script>
   <style>
     :root {
-      --bg-light: #f8fafc;
-      --bg-dark: #0b1220;
+      --bg-light: #fffaf5;
+      --bg-dark: #160f0a;
       --surface-light: #ffffff;
-      --surface-dark: #131d33;
-      --text-light: #0f172a;
-      --text-dark: #e2e8f0;
-      --muted-light: #475569;
-      --muted-dark: #94a3b8;
-      --border-light: #cbd5e1;
-      --border-dark: #253352;
-      --accent-light: #0f4c81;
-      --accent-dark: #60a5fa;
+      --surface-dark: #21160f;
+      --text-light: #1c1917;
+      --text-dark: #f5ebe0;
+      --muted-light: #57534e;
+      --muted-dark: #cbb8a6;
+      --border-light: #fed7aa;
+      --border-dark: #432818;
+      --accent-light: #c2410c;
+      --accent-dark: #fb923c;
       --accent-fg-light: #ffffff;
-      --accent-fg-dark: #0b1220;
+      --accent-fg-dark: #160f0a;
 
       --bg: var(--bg-light);
       --surface: var(--surface-light);
@@ -377,6 +377,31 @@
       font-weight: 600;
     }
 
+    .brand-wrap {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .flags {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .flag-svg {
+      display: block;
+      border-radius: 3px;
+      border: 1px solid var(--border);
+    }
+
+    .subsection-title {
+      margin: 1.75rem 0 0.85rem;
+      font-size: 1.1rem;
+      color: var(--accent);
+    }
+
     footer {
       border-top: 1px solid var(--border);
       padding-block: 1.5rem;
@@ -389,9 +414,49 @@
   <header>
     <a href="#main-content" class="skip-link visually-hidden">Skip to main content</a>
     <nav aria-label="Primary" class="container">
-      <a href="#main-content" class="brand">José Hipólito Baez</a>
+      <div class="brand-wrap">
+        <a href="#main-content" class="brand">José Hipólito Baez</a>
+        <div class="flags" aria-label="Heritage flags: Salta, Sephardi, Murcia">
+          <!-- Flag of Salta, Argentina -->
+          <svg class="flag-svg" width="28" height="18" viewBox="0 0 28 18" role="img" aria-label="Flag of Salta, Argentina">
+            <title>Salta, Argentina</title>
+            <rect width="28" height="18" fill="#9C2941"/>
+            <rect y="2" width="28" height="2.2" fill="#111111"/>
+            <rect y="13.8" width="28" height="2.2" fill="#111111"/>
+            <polygon points="14,5 15.1,7.3 17.6,7.3 15.6,8.8 16.4,11.2 14,9.8 11.6,11.2 12.4,8.8 10.4,7.3 12.9,7.3" fill="#74C6F1" stroke="#FACC15" stroke-width="0.6"/>
+            <circle cx="14" cy="8.5" r="1.3" fill="#FACC15"/>
+          </svg>
+          <!-- Sephardi Heritage Flag -->
+          <svg class="flag-svg" width="28" height="18" viewBox="0 0 28 18" role="img" aria-label="Sephardi Heritage Flag">
+            <title>Sephardi Heritage</title>
+            <rect width="28" height="9" fill="#C8102E"/>
+            <rect y="9" width="28" height="9" fill="#F5B700"/>
+            <polygon points="8,2.2 10.2,6 5.8,6" fill="none" stroke="#FFFFFF" stroke-width="0.9"/>
+            <polygon points="8,7.3 10.2,3.5 5.8,3.5" fill="none" stroke="#FFFFFF" stroke-width="0.9"/>
+          </svg>
+          <!-- Flag of the Region of Murcia, Spain -->
+          <svg class="flag-svg" width="28" height="18" viewBox="0 0 28 18" role="img" aria-label="Flag of the Region of Murcia, Spain">
+            <title>Region of Murcia, Spain</title>
+            <rect width="28" height="18" fill="#9E1B32"/>
+            <!-- 4 Castles (upper-left) -->
+            <rect x="2.5" y="2.2" width="3.2" height="2.6" fill="#FACC15"/>
+            <rect x="7" y="2.2" width="3.2" height="2.6" fill="#FACC15"/>
+            <rect x="2.5" y="6" width="3.2" height="2.6" fill="#FACC15"/>
+            <rect x="7" y="6" width="3.2" height="2.6" fill="#FACC15"/>
+            <!-- 7 Crowns (lower-right) -->
+            <circle cx="16.5" cy="11.2" r="1.1" fill="#FACC15"/>
+            <circle cx="20.2" cy="11.2" r="1.1" fill="#FACC15"/>
+            <circle cx="23.9" cy="11.2" r="1.1" fill="#FACC15"/>
+            <circle cx="18.3" cy="13.4" r="1.1" fill="#FACC15"/>
+            <circle cx="22.1" cy="13.4" r="1.1" fill="#FACC15"/>
+            <circle cx="16.5" cy="15.5" r="1.1" fill="#FACC15"/>
+            <circle cx="20.2" cy="15.5" r="1.1" fill="#FACC15"/>
+          </svg>
+        </div>
+      </div>
       <ul>
         <li><a href="#highlights">Highlights</a></li>
+        <li><a href="#web-projects">Web Projects</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#languages">Languages</a></li>
         <li><a href="#connect">Connect</a></li>
@@ -460,11 +525,42 @@
             <li><strong>Elements of AI:</strong> Intro to AI &amp; Building AI <em>(In Progress)</em></li>
             <li><strong>IBM SkillsBuild:</strong> AI &amp; Supply Chain Data <em>(In Progress)</em></li>
             <li><strong>Anthropic Academy:</strong> AI Fluency &amp; Structured Workflows <em>(In Progress)</em></li>
-            <li><strong>Japanese Language Certification:</strong> Business &amp; Reading Track <em>(Planned — Career Plan)</em></li>
           </ul>
           <p><strong>Core Tools:</strong> Python, Pandas, OpenPyXL, Advanced Excel, Sage ERP, Git/GitHub.</p>
         </article>
       </div>
+
+      <h3 class="subsection-title">Future Plans — Planned Certifications (2027–2030)</h3>
+      <div class="grid">
+        <article class="card">
+          <h3>Trade, Analytics &amp; Maritime Credentials</h3>
+          <ul>
+            <li><strong>ICC Academy Incoterms® 2020 Certificate</strong> <em>(2027–2028)</em></li>
+            <li><strong>Microsoft Power BI Data Analyst (PL-300) + SQL</strong> <em>(2027–2028)</em></li>
+            <li><strong>Institute of Chartered Shipbrokers (ICS) / FIATA Diploma</strong> <em>(2028–2030)</em></li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Official Language Certifications</h3>
+          <ul>
+            <li><strong>Cambridge C1 Advanced (CAE) / IELTS Academic 7.5–8.0</strong> <em>(2027)</em></li>
+            <li><strong>Catalan C1 (DGPL / Institut Ramon Llull)</strong> <em>(2027)</em></li>
+            <li><strong>JLPT N2 → N1 (Japanese)</strong> <em>(2028–2029)</em></li>
+            <li><strong>Goethe-Zertifikat B2 / TestDaF (German)</strong> <em>(2028)</em></li>
+            <li><strong>Ellinomatheia B2/C1 (Modern Greek)</strong> <em>(2028–2029)</em></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="web-projects">
+      <h2>Current Web Projects</h2>
+      <ul class="clean-list" role="list">
+        <li>
+          <h3><a class="inline-link" href="https://origenandino.base44.app" target="_blank" rel="noopener noreferrer">Origen Andino (Base44 Web App)</a></h3>
+          <p>Live web application for high-altitude Salta wine export and international trade operations (<a class="inline-link" href="https://origenandino.base44.app" target="_blank" rel="noopener noreferrer">origenandino.base44.app</a>).</p>
+        </li>
+      </ul>
     </section>
 
     <section id="projects">
@@ -473,10 +569,6 @@
         <li>
           <h3><a class="inline-link" href="https://github.com/HipolitoB/ai-learning-log" target="_blank" rel="noopener noreferrer">ai-learning-log</a></h3>
           <p>Structured AI study notes and Python route-optimization solvers (minimum CO₂ maritime legs across multi-port routes) tracking Elements of AI, IBM SkillsBuild, and Anthropic Academy.</p>
-        </li>
-        <li>
-          <h3><a class="inline-link" href="https://github.com/HipolitoB/vins-andins" target="_blank" rel="noopener noreferrer">vins-andins</a></h3>
-          <p>International market entry and export strategy project for high-altitude Salta wines targeting UK and European trade lanes.</p>
         </li>
         <li>
           <h3>Idescat Official CPI Statistical Automation (2026)</h3>
