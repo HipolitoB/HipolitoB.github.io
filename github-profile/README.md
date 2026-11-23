@@ -1,9 +1,12 @@
-## 💫 About Me:
+### Hi there 👋
 
-🚢 International Commerce candidate (Fundació UAB, Dual Intensive — Yr 2 GPA `9.5/10`) & Port Operations (*Forma't al Port*, Port of Barcelona)  
-💻 Building Python/Pandas automation, 3-way ERP reconciliation workflows, and supply chain analytics in [`ai-learning-log`](https://github.com/HipolitoB/ai-learning-log)  
-🌱 Currently completing **Elements of AI**, **IBM SkillsBuild**, and **Anthropic Academy** *(Harvard CS50x completed)*  
-🌏 Multilingual across Spanish, English (`C1`), Catalan (`B2+`), Japanese (`B2`), and studying Chinese  
+- 🎓 I'm **José Hipólito Baez**, an International Commerce candidate at **Fundació UAB** (Dual Intensive — Yr 2 GPA `9.5/10`) with Port Operations training at **Port of Barcelona** (*Forma't al Port*).
+- 🚢 Previously supported purchasing & logistics at **Rosario BZ** (`500+` SKUs, Sage ERP 3-way matching, Python/Pandas CSV automation).
+- 💻 This is my learning & building space: tracking **Python, Supply Chain Analytics, and AI** in [`ai-learning-log`](https://github.com/HipolitoB/ai-learning-log) (*Harvard CS50x* completed; currently finishing *Elements of AI*, *IBM SkillsBuild*, and *Anthropic Academy*).
+- 🌏 **Languages I manage & learn:**
+  - **Working & Business Fluency:** Spanish *(Native)* · English *(`C1`)* · Catalan *(`B2+` Bilingual)* · Japanese *(`B2` / `C1` reading)*
+  - **Active Daily Study & Reading Comprehension:** Chinese *(daily study)* · French · Italian · Portuguese · German · Greek · Russian *(tracked via Anki & LingQ)*
+- 📫 How to reach me: [`hipolitobaez223@gmail.com`](mailto:hipolitobaez223@gmail.com) · [Portfolio](https://hipolitob.github.io)
 
 ---
 
@@ -38,6 +41,5 @@
 
 ---
 
-### ✍️ Random Dev Quote
-
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight)
+> *"Hizkuntza bat ez da galtzen ez dakitenek ikasten ez dutelako, dakitenek **txiokatzen** ez dutelako baizik."*  
+> — **J. A. Artze**
