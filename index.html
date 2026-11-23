@@ -217,6 +217,57 @@
       border-radius: 0.75rem;
     }
 
+    .hero-layout {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem 2rem;
+    }
+
+    .hero-copy {
+      flex: 1 1 28rem;
+      min-width: 0;
+    }
+
+    .avatar-links {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-shrink: 0;
+    }
+
+    .avatar-link {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.4rem;
+      text-decoration: none;
+      color: var(--muted);
+      font-size: 0.8rem;
+      font-weight: 600;
+      transition: transform 0.15s ease, color 0.15s ease;
+    }
+
+    .avatar-link:hover {
+      transform: translateY(-2px);
+      color: var(--accent);
+    }
+
+    .avatar-link img {
+      width: 76px;
+      height: 76px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--border);
+      background-color: var(--bg);
+      transition: border-color 0.15s ease;
+    }
+
+    .avatar-link:hover img {
+      border-color: var(--accent);
+    }
+
     .eyebrow {
       margin: 0 0 0.5rem;
       font-size: 0.875rem;
@@ -350,16 +401,30 @@
 
   <main class="container">
     <section class="hero">
-      <p class="eyebrow">Terrassa, Barcelona · International Commerce &amp; Supply Chain Analytics</p>
-      <h1 id="main-content" tabindex="-1">José Hipólito Baez</h1>
-      <p class="lead">
-        Dual-Intensive International Commerce candidate at <strong>Fundació UAB</strong> with port operations training
-        (<strong>Forma't al Port</strong>) and hands-on purchasing, reconciliation, and Python/Pandas automation experience.
-        Building toward <strong>Maritime Finance</strong>, <strong>Corporate Procurement</strong>, and <strong>Supply Chain AI</strong>.
-      </p>
-      <div class="actions">
-        <a class="btn btn-primary" href="https://www.linkedin.com/in/jose-hipolito-baez" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
-        <a class="btn btn-secondary" href="https://github.com/HipolitoB" target="_blank" rel="noopener noreferrer">GitHub (@HipolitoB)</a>
+      <div class="hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow">Terrassa, Barcelona · International Commerce &amp; Supply Chain Analytics</p>
+          <h1 id="main-content" tabindex="-1">José Hipólito Baez</h1>
+          <p class="lead">
+            Dual-Intensive International Commerce candidate at <strong>Fundació UAB</strong> with port operations training
+            (<strong>Forma't al Port</strong>) and hands-on purchasing, reconciliation, and Python/Pandas automation experience.
+            Building toward <strong>Maritime Finance</strong>, <strong>Corporate Procurement</strong>, and <strong>Supply Chain AI</strong>.
+          </p>
+          <div class="actions">
+            <a class="btn btn-primary" href="https://www.linkedin.com/in/jose-hipolito-baez" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+            <a class="btn btn-secondary" href="https://github.com/HipolitoB" target="_blank" rel="noopener noreferrer">GitHub (@HipolitoB)</a>
+          </div>
+        </div>
+        <div class="avatar-links" aria-label="Profile links">
+          <a class="avatar-link" href="https://www.linkedin.com/in/jose-hipolito-baez" target="_blank" rel="noopener noreferrer" aria-label="José Hipólito Baez on LinkedIn">
+            <img src="assets/linkedin-pfp.jpg" width="76" height="76" alt="LinkedIn profile picture of José Hipólito Baez" onerror="this.onerror=null;this.src='https://unavatar.io/linkedin/jose-hipolito-baez?fallback=https://avatars.githubusercontent.com/HipolitoB?s=160';">
+            <span>LinkedIn</span>
+          </a>
+          <a class="avatar-link" href="https://github.com/HipolitoB" target="_blank" rel="noopener noreferrer" aria-label="José Hipólito Baez on GitHub">
+            <img src="https://avatars.githubusercontent.com/HipolitoB?s=160" width="76" height="76" alt="GitHub profile picture of José Hipólito Baez">
+            <span>GitHub</span>
+          </a>
+        </div>
       </div>
     </section>
 
