@@ -25,16 +25,24 @@
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
+![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![Microsoft Excel](https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
+![Microsoft Word](https://img.shields.io/badge/Microsoft_Word-2B579A?style=for-the-badge&logo=microsoft-word&logoColor=white)
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+![Ghidra](https://img.shields.io/badge/Ghidra-E11D48?style=for-the-badge)
 ![Sage ERP](https://img.shields.io/badge/Sage_ERP-00D639?style=for-the-badge&logoColor=black)
 ![Logistics Systems](https://img.shields.io/badge/Logistics_Systems-EA580C?style=for-the-badge)
 ![Incoterms 2020](https://img.shields.io/badge/Incoterms%C2%AE_2020-0F4C81?style=for-the-badge)
 ![Customs DUA](https://img.shields.io/badge/Customs_DUA-1E3A8A?style=for-the-badge)
+![EU-ETS Maritime](https://img.shields.io/badge/EU--ETS_Maritime-047857?style=for-the-badge)
+![AI Automation](https://img.shields.io/badge/AI_Automation-7C3AED?style=for-the-badge)
+![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white)
+![Video Editing](https://img.shields.io/badge/Video_Editing-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
+![Anki](https://img.shields.io/badge/Anki-2563EB?style=for-the-badge&logo=anki&logoColor=white)
 
 ---
 
