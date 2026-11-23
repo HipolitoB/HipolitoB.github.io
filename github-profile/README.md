@@ -16,6 +16,7 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jose-hipolito-baez)
 [![Portfolio](https://img.shields.io/badge/Portfolio-C2410C?logo=google-chrome&logoColor=white)](https://hipolitob.github.io/)
+[![LingQ](https://img.shields.io/badge/LingQ-2563EB?logo=bookstack&logoColor=white)](https://www.lingq.com/ru/learn/el/web/profile)
 [![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:hipolitobaez223@gmail.com)
 
 ---
