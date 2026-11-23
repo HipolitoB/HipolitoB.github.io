@@ -16,7 +16,7 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jose-hipolito-baez)
 [![Portfolio](https://img.shields.io/badge/Portfolio-C2410C?logo=google-chrome&logoColor=white)](https://hipolitob.github.io/)
-[![LingQ](https://img.shields.io/badge/LingQ-2563EB?logo=bookstack&logoColor=white)](https://www.lingq.com/ru/learn/el/web/profile)
+[![LingQ](https://img.shields.io/badge/LingQ-2563EB?logo=bookstack&logoColor=white)](https://www.lingq.com/profile/malakies)
 [![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:hipolitobaez223@gmail.com)
 
 ---
@@ -24,6 +24,7 @@
 ## 💻 Tech Stack:
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
@@ -31,6 +32,7 @@
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 ![Sage ERP](https://img.shields.io/badge/Sage_ERP-00D639?style=for-the-badge&logoColor=black)
+![Logistics Systems](https://img.shields.io/badge/Logistics_Systems-EA580C?style=for-the-badge)
 ![Incoterms 2020](https://img.shields.io/badge/Incoterms%C2%AE_2020-0F4C81?style=for-the-badge)
 ![Customs DUA](https://img.shields.io/badge/Customs_DUA-1E3A8A?style=for-the-badge)
 
