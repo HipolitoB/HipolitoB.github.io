@@ -231,61 +231,89 @@
 
     .hero {
       margin-block-start: 0;
-      padding: 2rem;
+      padding: 2.25rem 2rem;
       background-color: var(--surface);
       border: 1px solid var(--border);
-      border-radius: 0.75rem;
+      border-radius: 0;
     }
 
-    .hero-layout {
+    .hero-profile {
       display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1.5rem 2rem;
-    }
-
-    .hero-copy {
-      flex: 1 1 28rem;
-      min-width: 0;
-    }
-
-    .avatar-links {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      flex-shrink: 0;
-    }
-
-    .avatar-link {
-      display: inline-flex;
       flex-direction: column;
       align-items: center;
-      gap: 0.4rem;
-      text-decoration: none;
-      color: var(--muted);
-      font-size: 0.8rem;
-      font-weight: 600;
-      transition: transform 0.15s ease, color 0.15s ease;
+      text-align: center;
     }
 
-    .avatar-link:hover {
-      transform: translateY(-2px);
+    .hero-avatar {
+      width: 132px;
+      height: 132px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--accent);
+      background-color: var(--bg);
+      margin-bottom: 1rem;
+    }
+
+    .hero-role {
+      margin: 0 0 0.35rem;
+      font-size: 1.05rem;
+      font-weight: 600;
       color: var(--accent);
     }
 
-    .avatar-link img {
-      width: 76px;
-      height: 76px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 2px solid var(--border);
-      background-color: var(--bg);
-      transition: border-color 0.15s ease;
+    .hero-affiliation {
+      margin: 0 0 1.15rem;
+      font-size: 0.95rem;
+      color: var(--muted);
     }
 
-    .avatar-link:hover img {
+    .social-circles {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.75rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .social-circle {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      background-color: var(--bg);
+      color: var(--text);
+      text-decoration: none;
+      transition: border-color 0.15s ease, color 0.15s ease, transform 0.15s ease;
+    }
+
+    .social-circle:hover {
       border-color: var(--accent);
+      color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    .summary-box {
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+      text-align: left;
+      max-width: 72ch;
+      margin-inline: auto;
+    }
+
+    .summary-box h2 {
+      font-size: 1.1rem;
+      border-bottom: none;
+      padding-bottom: 0;
+      margin-bottom: 0.5rem;
+      color: var(--accent);
+    }
+
+    .summary-box p {
+      margin: 0;
+      color: var(--muted);
     }
 
     .eyebrow {
@@ -333,7 +361,7 @@
       justify-content: center;
       min-block-size: 44px;
       padding: 0.55rem 1.15rem;
-      border-radius: 0.5rem;
+      border-radius: 0;
       font-weight: 600;
       text-decoration: none;
       border: 1px solid var(--accent);
@@ -358,7 +386,7 @@
     .card {
       background-color: var(--surface);
       border: 1px solid var(--border);
-      border-radius: 0.65rem;
+      border-radius: 0;
       padding: 1.2rem;
     }
 
@@ -388,7 +416,7 @@
     .clean-list li {
       background-color: var(--surface);
       border: 1px solid var(--border);
-      border-radius: 0.5rem;
+      border-radius: 0;
       padding: 0.9rem 1.1rem;
     }
 
@@ -407,15 +435,18 @@
     .flags {
       display: inline-flex;
       align-items: center;
-      gap: 0.4rem;
+      flex-wrap: nowrap;
+      gap: 0.45rem;
     }
 
     .flag-svg,
     .flag-img {
       display: block;
-      height: 20px;
-      width: auto;
-      border-radius: 3px;
+      width: 27px;
+      height: 18px;
+      object-fit: cover;
+      flex-shrink: 0;
+      border-radius: 0;
       border: 1px solid var(--border);
     }
 
@@ -453,6 +484,7 @@
         </div>
       </div>
       <ul>
+        <li><a href="#studies">Studies</a></li>
         <li><a href="#highlights">Highlights</a></li>
         <li><a href="#web-projects">Web Projects</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -464,89 +496,113 @@
 
   <main class="container">
     <section class="hero">
-      <div class="hero-layout">
-        <div class="hero-copy">
-          <p class="eyebrow">Terrassa, Barcelona · International Commerce &amp; Supply Chain Analytics</p>
-          <h1 id="main-content" tabindex="-1">José Hipólito Baez</h1>
-          <p class="lead">
-            Dual-Intensive International Commerce candidate at <strong>Fundació UAB</strong> with port operations training
-            (<strong>Forma't al Port</strong>) and hands-on purchasing, reconciliation, and Python/Pandas automation experience.
-            Building toward <strong>Maritime Finance</strong>, <strong>Corporate Procurement</strong>, and <strong>Supply Chain AI</strong>.
-          </p>
-          <div class="actions">
-            <a class="btn btn-primary" href="https://www.linkedin.com/in/jose-hipolito-baez" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
-            <a class="btn btn-secondary" href="https://github.com/HipolitoB" target="_blank" rel="noopener noreferrer">GitHub (@HipolitoB)</a>
-          </div>
-        </div>
-        <div class="avatar-links" aria-label="Profile links">
-          <a class="avatar-link" href="https://www.linkedin.com/in/jose-hipolito-baez" target="_blank" rel="noopener noreferrer" aria-label="José Hipólito Baez on LinkedIn">
-            <img src="assets/linkedin-pfp.png" width="76" height="76" alt="LinkedIn profile picture of José Hipólito Baez">
-            <span>LinkedIn</span>
+      <div class="hero-profile">
+        <img class="hero-avatar" src="assets/linkedin-pfp.png" width="132" height="132" alt="José Hipólito Baez">
+        <h1 id="main-content" tabindex="-1">José Hipólito Baez</h1>
+        <p class="hero-role">Maritime Finance · Corporate Procurement · Supply Chain Analytics &amp; AI</p>
+        <p class="hero-affiliation">Fundació UAB (Dual Intensive) · Forma't al Port · Terrassa, Barcelona, Spain</p>
+        <div class="social-circles" aria-label="Primary links">
+          <a class="social-circle" href="mailto:hipolitobaez223@gmail.com" aria-label="Email José Hipólito Baez" title="Email">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
           </a>
-          <a class="avatar-link" href="https://github.com/HipolitoB" target="_blank" rel="noopener noreferrer" aria-label="José Hipólito Baez on GitHub">
-            <img src="https://avatars.githubusercontent.com/HipolitoB?s=160" width="76" height="76" alt="GitHub profile picture of José Hipólito Baez">
-            <span>GitHub</span>
+          <a class="social-circle" href="https://github.com/HipolitoB" target="_blank" rel="noopener noreferrer" aria-label="GitHub (@HipolitoB)" title="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2c-3.2.69-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+          </a>
+          <a class="social-circle" href="https://www.linkedin.com/in/jose-hipolito-baez" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" title="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05c.53-1 1.82-2.05 3.75-2.05C21.6 8.65 22 11.3 22 14.7V21h-4v-5.6c0-1.33-.02-3.05-1.85-3.05-1.86 0-2.15 1.45-2.15 2.95V21h-4V9Z"/></svg>
+          </a>
+          <a class="social-circle" href="https://www.lingq.com/profile/malakies" target="_blank" rel="noopener noreferrer" aria-label="LingQ Profile (@malakies)" title="LingQ">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+          </a>
+          <a class="social-circle" href="https://origenandino.base44.app" target="_blank" rel="noopener noreferrer" aria-label="Origen Andino Web App" title="Origen Andino">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10Z"/></svg>
           </a>
         </div>
+      </div>
+      <div class="summary-box">
+        <h2>Professional Summary</h2>
+        <p>
+          Analytical International Commerce &amp; Dual-Intensive CFGS candidate at <strong>Fundació UAB</strong> (2025–2027; Year 1 GPA 8.3/10, Year 2 ~9.0/10) with Port of Barcelona operational training (<strong>Forma't al Port</strong>) and selected <strong>FUAB Formació Promotion Support Trainee</strong> (2026–2027). At <strong>Rosario BZ</strong>, I managed purchasing and inventory across <strong>500+ SKUs</strong>, implemented three-way invoice/delivery matching in <strong>Sage ERP</strong> (<strong>-18% discrepancies</strong>), and automated CSV stock reporting in <strong>Python/Pandas</strong> (<strong>~4 hrs/week saved</strong>). Fluent in <strong>Spanish</strong> (Native), <strong>English</strong> (C1), and <strong>Catalan</strong> (B2+ Bilingual), with Japanese business protocol training (<em>keigo</em>) and active official-exam preparation across global trade languages.
+        </p>
       </div>
     </section>
 
-    <section id="highlights">
-      <h2>Verified Highlights</h2>
+    <section id="studies">
+      <h2>Studies, Certificates &amp; Planned Credentials</h2>
       <div class="grid">
         <article class="card">
-          <h3>Fundació UAB — CFGS International Commerce</h3>
-          <p class="meta">2025–2027 · Bilingual (Catalan / English) · Dual Intensive</p>
-          <p>Year 1 GPA: <strong>8.3/10</strong> · Year 2 GPA: <strong>~9.0/10</strong>. Core modules in Incoterms 2020, customs DUA, international purchasing, transport logistics, and trade finance.</p>
+          <h3>CFGS International Commerce (Dual Intensive)</h3>
+          <p class="meta">Fundació UAB · 2025–2027 · Bilingual (CA/EN)</p>
+          <p>Year 1 GPA: <strong>8.3/10</strong> · Year 2 GPA: <strong>~9.0/10</strong>. Incoterms® 2020, customs DUA, international purchasing, transport logistics, and trade finance.</p>
         </article>
         <article class="card">
-          <h3>Forma't al Port — Port of Barcelona</h3>
+          <h3>Forma't al Port — Port Logistics &amp; Trade</h3>
           <p class="meta">Escola Europea - Intermodal Transport · 2026</p>
-          <p>Operational certification covering maritime supply chains, container terminal operations, intermodal corridors, and customs documentation.</p>
+          <p>Port of Barcelona operational training covering maritime supply chains, container terminals, intermodal corridors, and customs documentation.</p>
         </article>
         <article class="card">
-          <h3>Rosario BZ — Logistics &amp; Purchasing Support</h3>
-          <p class="meta">Textile Sector · Argentina · 2023–2025</p>
-          <ul>
-            <li>Purchase orders and inventory tracking across <strong>500+ SKUs</strong>.</li>
-            <li>Reconciled supplier invoices vs. delivery notes in Sage ERP: <strong>-18% discrepancies</strong>.</li>
-            <li>Automated daily CSV stock alerts in Python/Pandas: <strong>~4 hrs/week saved</strong>.</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h3>Certifications &amp; Technical Stack</h3>
-          <p class="meta">Verified Courses · Ongoing AI &amp; Port Credentials</p>
-          <ul>
-            <li><strong>Harvard CS50x:</strong> Introduction to Computer Science <em>(Completed)</em></li>
-            <li><strong>Python Programming (Domestika):</strong> Scripting &amp; Data Automation <em>(Completed)</em></li>
-            <li><strong>Forma't al Port:</strong> Port Logistics &amp; Intermodal Trade <em>(2026)</em></li>
-            <li><strong>Elements of AI:</strong> Intro to AI &amp; Building AI <em>(In Progress)</em></li>
-            <li><strong>IBM SkillsBuild:</strong> AI &amp; Supply Chain Data <em>(In Progress)</em></li>
-            <li><strong>Anthropic Academy:</strong> AI Fluency &amp; Structured Workflows <em>(In Progress)</em></li>
-          </ul>
-          <p><strong>Core Tools:</strong> Python, C, C++, Pandas, OpenPyXL, Advanced Excel, Microsoft Word, Sage ERP, Logistics Systems, Git/GitHub, Canva, Video Editing.</p>
+          <h3>Japanese Language &amp; Business Culture</h3>
+          <p class="meta">Asociación Japonesa de Salta · 2022–2025</p>
+          <p>Conversational workshops, cultural exchange, and Japanese sociolinguistic business protocols (<em>keigo</em>).</p>
         </article>
       </div>
 
-      <h3 class="subsection-title">Future Plans — Planned Certifications (2027–2030)</h3>
+      <h3 class="subsection-title">Certificates &amp; Career-Plan Credentials</h3>
       <div class="grid">
         <article class="card">
-          <h3>Trade, Analytics &amp; Maritime Credentials</h3>
+          <h3>Completed &amp; In Progress</h3>
           <ul>
-            <li><strong>ICC Academy Incoterms® 2020 Certificate</strong> <em>(2027–2028)</em></li>
-            <li><strong>Microsoft Power BI Data Analyst (PL-300) + SQL</strong> <em>(2027–2028)</em></li>
-            <li><strong>Institute of Chartered Shipbrokers (ICS) / FIATA Diploma</strong> <em>(2028–2030)</em></li>
+            <li><strong>Harvard CS50x:</strong> Computer Science <em>(Completed)</em></li>
+            <li><strong>Python Programming (Domestika):</strong> Automation <em>(Completed)</em></li>
+            <li><strong>Elements of AI:</strong> Intro &amp; Building AI <em>(In Progress)</em></li>
+            <li><strong>IBM SkillsBuild &amp; Anthropic Academy:</strong> AI &amp; Data <em>(In Progress)</em></li>
           </ul>
         </article>
         <article class="card">
-          <h3>Official Language Certifications</h3>
+          <h3>Planned — Trade, Finance &amp; Data (2027–2030)</h3>
           <ul>
-            <li><strong>Cambridge C1 Advanced (CAE) / IELTS Academic 7.5–8.0</strong> <em>(2027)</em></li>
+            <li><strong>ICC Academy Incoterms® 2020 Certificate</strong> <em>(2027–2028)</em></li>
+            <li><strong>Microsoft Power BI (PL-300) + SQL</strong> <em>(2027–2028)</em></li>
+            <li><strong>Institute of Chartered Shipbrokers (ICS) / FIATA</strong> <em>(2028–2030)</em></li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Planned — Official Language Exams (2027–2029)</h3>
+          <ul>
+            <li><strong>Cambridge C1 Advanced (CAE) / IELTS 7.5–8.0</strong> <em>(2027)</em></li>
             <li><strong>Catalan C1 (DGPL / Institut Ramon Llull)</strong> <em>(2027)</em></li>
             <li><strong>JLPT N2 → N1 (Japanese)</strong> <em>(2028–2029)</em></li>
             <li><strong>Goethe-Zertifikat B2 / TestDaF (German)</strong> <em>(2028)</em></li>
             <li><strong>Ellinomatheia B2/C1 (Modern Greek)</strong> <em>(2028–2029)</em></li>
           </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="highlights">
+      <h2>Verified Experience &amp; Technical Highlights</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Rosario BZ — Operations &amp; Purchasing Support</h3>
+          <p class="meta">Textile Sector · Salta, Argentina · 2023–2025</p>
+          <ul>
+            <li>End-to-end PO tracking &amp; replenishment across <strong>500+ SKUs</strong>.</li>
+            <li>3-way invoice/delivery matching in Sage ERP: <strong>-18% discrepancies</strong>.</li>
+            <li>Automated Python/Pandas CSV stock alerts: <strong>~4 hrs/week saved</strong>.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>FUAB Formació &amp; Business Valuation</h3>
+          <p class="meta">Institutional &amp; Analytical Track · 2026–2027</p>
+          <ul>
+            <li>Selected <strong>FUAB Formació Promotion Support Trainee</strong> (Campus UAB).</li>
+            <li>Authored <strong>Rosario BZ v3.0 Exit Valuation</strong> &amp; 17-machine fixed-asset audit.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Core Technical &amp; Media Stack</h3>
+          <p class="meta">Analytics · Systems · Trade · Communication</p>
+          <p>Python, C, C++, Pandas, OpenPyXL, Advanced Excel, Microsoft Word, Sage ERP, Logistics Systems, Git/GitHub, Canva, and Video Editing (YouTube 1,000+ subscribers on creative channel).</p>
         </article>
       </div>
     </section>
@@ -609,7 +665,7 @@
       </div>
       <div style="margin-top: 1.5rem;">
         <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=21gmkpdi77rpy6ngfvgxaccdi&amp;redirect=true" target="_blank" rel="noopener noreferrer" aria-label="Last song listened on Spotify">
-          <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=21gmkpdi77rpy6ngfvgxaccdi&amp;cover_image=true&amp;theme=default&amp;show_offline=true&amp;background_color=121212&amp;interchange=true&amp;profanity=false&amp;hide_remaster=true&amp;bar_color=927a26&amp;bar_color_cover=true" alt="Spotify recently played track" style="max-width: 100%; height: auto; border-radius: 0.5rem; border: 1px solid var(--border);">
+          <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=21gmkpdi77rpy6ngfvgxaccdi&amp;cover_image=true&amp;theme=default&amp;show_offline=true&amp;background_color=121212&amp;interchange=true&amp;profanity=false&amp;hide_remaster=true&amp;bar_color=927a26&amp;bar_color_cover=true" alt="Spotify recently played track" style="max-width: 100%; height: auto; border-radius: 0; border: 1px solid var(--border);">
         </a>
       </div>
     </section>
