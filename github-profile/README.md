@@ -1,19 +1,21 @@
 ### Hi there 👋
 
-- 🎓 I'm **José Hipólito Baez**, an International Commerce candidate at **Fundació UAB** (Dual Intensive — Yr 2 GPA `9.5/10`) with Port Operations training at **Port of Barcelona** (*Forma't al Port*).
-- 🚢 Previously supported purchasing & logistics at **Rosario BZ** (`500+` SKUs, Sage ERP 3-way matching, Python/Pandas CSV automation).
-- 💻 This is my learning & building space: tracking **Python, Supply Chain Analytics, and AI** in [`ai-learning-log`](https://github.com/HipolitoB/ai-learning-log) (*Harvard CS50x* completed; currently finishing *Elements of AI*, *IBM SkillsBuild*, and *Anthropic Academy*).
-- 🌏 **Languages I manage & learn:**
-  - **Working & Business Fluency:** Spanish *(Native)* · English *(`C1`)* · Catalan *(`B2+` Bilingual)* · Japanese *(`B2` / `C1` reading)*
-  - **Active Daily Study & Reading Comprehension:** Chinese *(daily study)* · French · Italian · Portuguese · German · Greek · Russian *(tracked via Anki & LingQ)*
-- 📫 How to reach me: [`hipolitobaez223@gmail.com`](mailto:hipolitobaez223@gmail.com) · [Portfolio](https://hipolitob.github.io)
+- 🎓 I'm **José Hipólito Baez**, a Dual-Intensive **International Commerce** candidate at **Fundació UAB** (Yr 2 GPA `~9.0/10`), **FUAB Formació Promotion Support Trainee** (`2026–2027`), and **Port Operations** trainee at **Port of Barcelona** (*Forma't al Port*).
+- 🎯 Focused on the intersection of **Maritime Finance · Maritime Corporate Procurement · Supply Chain Analytics & AI**.
+- 🚢 Previously supported purchasing & logistics at **Rosario BZ** (`500+` SKUs, Sage ERP 3-way matching with `-18%` billing discrepancies, and `~4 hrs/wk` saved via Python/Pandas CSV automation).
+- 💻 This is my learning & building space: tracking **Python, Supply Chain Analytics, and AI** in [`ai-learning-log`](https://github.com/HipolitoB/ai-learning-log) (*Harvard CS50x* completed; currently finishing *Elements of AI*, *IBM SkillsBuild*, and *Anthropic Academy*), plus web projects like [**Origen Andino**](https://origenandino.base44.app).
+- 🌏 **Languages I manage & learn** *(510k+ LingQ words · 200k+ Anki reviews · active official-exam sprint)*:
+  - **Working & Business Fluency:** Spanish *(Native)* · English *(`C1`)* · Catalan *(`B2+` Bilingual)*
+  - **Near-N1 / C1–C2 Comprehension (Exam Track):** Japanese *(near-N1 reading · keigo training · JLPT N2/N1 track)* · Modern Greek *(`C1/C2` comp · Ellinomatheia track)* · Mandarin Chinese *(daily study · `C1` comp)* · Korean *(`C1` comp)*
+  - **Additional Reading & Study:** French · Italian · Portuguese · Russian · German *(`B2+` comp)* · Basque *(`A2`)*
+- 📫 How to reach me: [`hipolitobaez223@gmail.com`](mailto:hipolitobaez223@gmail.com) · [Portfolio](https://hipolitob.github.io/)
 
 ---
 
 ## 🌐 Socials:
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jose-hipolito-baez)
-[![Portfolio](https://img.shields.io/badge/Portfolio-0F4C81?logo=google-chrome&logoColor=white)](https://hipolitob.github.io)
+[![Portfolio](https://img.shields.io/badge/Portfolio-C2410C?logo=google-chrome&logoColor=white)](https://hipolitob.github.io/)
 [![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:hipolitobaez223@gmail.com)
 
 ---
