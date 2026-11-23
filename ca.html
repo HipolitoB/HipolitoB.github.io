@@ -497,6 +497,15 @@
       color: var(--accent);
     }
 
+
+    .greek-greeting {
+      margin: 0 0 0.35rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--accent);
+      letter-spacing: 0.02em;
+    }
+
   </style>
 </head>
 <body>
@@ -541,6 +550,7 @@
             <img src="https://avatars.githubusercontent.com/HipolitoB?s=96" width="44" height="44" alt="GitHub avatar">
           </a>
         </div>
+        <p id="greek-greeting" class="greek-greeting">Καλησπέρα! · Kalispera</p>
         <h1 id="main-content" tabindex="-1">José Hipólito Baez</h1>
         <p class="hero-role">Finances Marítimes · Compres Corporatives · Analítica de Supply Chain i IA</p>
         <p class="hero-affiliation">Fundació UAB (Dual Intensiva) · Forma't al Port · Terrassa, Barcelona</p>
@@ -700,5 +710,26 @@
       <p>José Hipólito Baez · Terrassa, Barcelona · Portafoli Canònic</p>
     </div>
   </footer>
+
+  <script>
+    (function () {
+      var el = document.getElementById("greek-greeting");
+      if (!el) return;
+      var hour = Number(
+        new Intl.DateTimeFormat("en-GB", {
+          timeZone: "Europe/Madrid",
+          hour: "numeric",
+          hour12: false
+        }).format(new Date())
+      );
+      if (hour >= 5 && hour < 12) {
+        el.textContent = "Καλημέρα! · Kalimera (Madrid)";
+      } else if (hour >= 12 && hour < 20) {
+        el.textContent = "Καλησπέρα! · Kalispera (Madrid)";
+      } else {
+        el.textContent = "Καληνύχτα! · Kalinixta (Madrid)";
+      }
+    })();
+  </script>
 </body>
 </html>
