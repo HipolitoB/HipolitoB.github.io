@@ -1,0 +1,106 @@
+name: Portfolio PR Smoke Checks
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  html-and-link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Validate HTML structure and internal links
+        run: |
+          python3 - << 'EOF'
+          from html.parser import HTMLParser
+          from pathlib import Path
+          import sys
+
+          VOID_TAGS = {
+              "area", "base", "br", "col", "embed", "hr", "img", "input",
+              "link", "meta", "param", "source", "track", "wbr",
+          }
+
+          class SmokeHTMLParser(HTMLParser):
+              def __init__(self) -> None:
+                  super().__init__()
+                  self.stack: list[str] = []
+                  self.ids: set[str] = set()
+                  self.links: list[tuple[str, str]] = []
+                  self.errors: list[str] = []
+                  self.has_title = False
+
+              def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+                  attr_map = dict(attrs)
+                  if "id" in attr_map and attr_map["id"]:
+                      self.ids.add(attr_map["id"])
+                  if tag == "title":
+                      self.has_title = True
+                  if tag in ("a", "link") and "href" in attr_map:
+                      self.links.append((tag, attr_map["href"] or ""))
+                  if tag in ("img", "script") and "src" in attr_map:
+                      self.links.append((tag, attr_map["src"] or ""))
+                  if tag not in VOID_TAGS:
+                      self.stack.append(tag)
+
+              def handle_endtag(self, tag: str) -> None:
+                  if tag in VOID_TAGS:
+                      return
+                  if not self.stack:
+                      self.errors.append(f"Unexpected closing </{tag}>")
+                      return
+                  if self.stack[-1] == tag:
+                      self.stack.pop()
+                  else:
+                      self.errors.append(f"Mismatched closing </{tag}> (expected </{self.stack[-1]}>)")
+
+          pages = [Path("index.html"), Path("ca.html"), Path("es.html")]
+          failed = False
+
+          for page in pages:
+              if not page.exists():
+                  print(f"ERROR: Missing required page {page}", file=sys.stderr)
+                  failed = True
+                  continue
+
+              parser = SmokeHTMLParser()
+              parser.feed(page.read_text(encoding="utf-8"))
+              parser.close()
+
+              if not parser.has_title:
+                  parser.errors.append("Missing <title> tag")
+              if parser.stack:
+                  parser.errors.append(f"Unclosed tags: {parser.stack}")
+
+              for tag, target in parser.links:
+                  if not target.strip():
+                      parser.errors.append(f"Empty link target in <{tag}>")
+                      continue
+                  if target.startswith(("http://", "https://", "mailto:", "tel:", "data:", "javascript:")):
+                      continue
+                  if target.startswith("#"):
+                      anchor = target[1:]
+                      if anchor and anchor not in parser.ids:
+                          parser.errors.append(f"Broken anchor #{anchor} in {page}")
+                      continue
+                  rel_path = target.split("#", 1)[0].split("?", 1)[0]
+                  if rel_path and not Path(rel_path).exists():
+                      parser.errors.append(f"Broken local reference '{target}' in {page}")
+
+              if parser.errors:
+                  failed = True
+                  for err in parser.errors:
+                      print(f"ERROR [{page}]: {err}", file=sys.stderr)
+              else:
+                  print(f"OK [{page}]: HTML structure & {len(parser.links)} links valid")
+
+          if failed:
+              sys.exit(1)
+          EOF
