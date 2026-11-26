@@ -402,6 +402,43 @@
       padding-left: 1.2rem;
     }
 
+    .card ul.cert-list {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 0.75rem;
+      display: grid;
+      gap: 0.65rem;
+    }
+
+    .cert-list li {
+      line-height: 1.45;
+      padding-bottom: 0.55rem;
+      border-bottom: 1px dashed var(--border);
+    }
+
+    .cert-list li:last-child {
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    .cert-badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      padding: 0.1rem 0.45rem;
+      border: 1px solid var(--border);
+      color: var(--accent);
+      margin-left: 0.35rem;
+      vertical-align: middle;
+    }
+
+    .cert-badge--done {
+      background-color: var(--accent);
+      border-color: var(--accent);
+      color: var(--accent-fg);
+    }
+
     .meta {
       font-size: 0.875rem;
       color: var(--muted);
@@ -678,32 +715,37 @@
       <h3 class="subsection-title">Certificates &amp; Career-Plan Credentials</h3>
       <div class="grid">
         <article class="card">
-          <h3>Completed &amp; In Progress</h3>
-          <ul>
-            <li><strong>Harvard CS50x:</strong> Computer Science <em>(Completed)</em></li>
-            <li><strong>Python Programming (Domestika):</strong> Automation <em>(Completed)</em></li>
-            <li><strong>Elements of AI:</strong> Intro &amp; Building AI <em>(In Progress)</em></li>
-            <li><strong>Anthropic Academy:</strong> AI Fluency: Framework &amp; Foundations <em>(Completed, Nov 2026)</em></li>
-            <li><strong>Port Virtual Lab (PVL) — Escola Europea:</strong> Intermodal Logistics Simulation <em>(In Progress, Nov–Dec 2026)</em></li>
-            <li><strong>IBM SkillsBuild:</strong> AI &amp; Data <em>(In Progress)</em></li>
+          <h3>Completed</h3>
+          <ul class="cert-list">
+            <li><strong>Anthropic Academy</strong> — AI Fluency: Framework &amp; Foundations <span class="cert-badge cert-badge--done">Nov 2026</span></li>
+            <li><strong>Harvard CS50x</strong> — Computer Science <span class="cert-badge cert-badge--done">Completed</span></li>
+            <li><strong>Python Programming (Domestika)</strong> — Automation <span class="cert-badge cert-badge--done">Completed</span></li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>In Progress</h3>
+          <ul class="cert-list">
+            <li><strong>Port Virtual Lab (PVL) — Escola Europea</strong> — Intermodal Logistics Simulation <span class="cert-badge">Nov–Dec 2026</span></li>
+            <li><strong>Elements of AI</strong> — Intro &amp; Building AI <span class="cert-badge">Active</span></li>
+            <li><strong>IBM SkillsBuild</strong> — AI &amp; Data <span class="cert-badge">Active</span></li>
           </ul>
         </article>
         <article class="card">
           <h3>Planned — Trade, Finance &amp; Data (2027–2030)</h3>
-          <ul>
-            <li><strong>ICC Academy Incoterms® 2020 Certificate</strong> <em>(2027–2028)</em></li>
-            <li><strong>Microsoft Power BI (PL-300) + SQL</strong> <em>(2027–2028)</em></li>
-            <li><strong>Institute of Chartered Shipbrokers (ICS) / FIATA</strong> <em>(2028–2030)</em></li>
+          <ul class="cert-list">
+            <li><strong>ICC Academy Incoterms® 2020 Certificate</strong> <span class="cert-badge">2027–2028</span></li>
+            <li><strong>Microsoft Power BI (PL-300) + SQL</strong> <span class="cert-badge">2027–2028</span></li>
+            <li><strong>Institute of Chartered Shipbrokers (ICS) / FIATA</strong> <span class="cert-badge">2028–2030</span></li>
           </ul>
         </article>
         <article class="card">
           <h3>Planned — Official Language Exams (2027–2029)</h3>
-          <ul>
-            <li><strong>Cambridge C1 Advanced (CAE) / IELTS 7.5–8.0</strong> <em>(2027)</em></li>
-            <li><strong>Catalan C1 (DGPL / Institut Ramon Llull)</strong> <em>(2027)</em></li>
-            <li><strong>JLPT N2 → N1 (Japanese)</strong> <em>(2028–2029)</em></li>
-            <li><strong>Goethe-Zertifikat B2 / TestDaF (German)</strong> <em>(2028)</em></li>
-            <li><strong>Ellinomatheia B2/C1 (Modern Greek)</strong> <em>(2028–2029)</em></li>
+          <ul class="cert-list">
+            <li><strong>Cambridge C1 Advanced (CAE) / IELTS 7.5–8.0</strong> <span class="cert-badge">2027</span></li>
+            <li><strong>Catalan C1 (DGPL / Institut Ramon Llull)</strong> <span class="cert-badge">2027</span></li>
+            <li><strong>JLPT N2 → N1 (Japanese)</strong> <span class="cert-badge">2028–2029</span></li>
+            <li><strong>Goethe-Zertifikat B2 / TestDaF (German)</strong> <span class="cert-badge">2028</span></li>
+            <li><strong>Ellinomatheia B2/C1 (Modern Greek)</strong> <span class="cert-badge">2028–2029</span></li>
           </ul>
         </article>
       </div>
