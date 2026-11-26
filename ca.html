@@ -721,9 +721,10 @@
           <h3>En Curs</h3>
           <ul class="cert-list">
             <li><strong>Port Virtual Lab (PVL) — Escola Europea</strong> — Simulació Logística Intermodal <span class="cert-badge">Nov.–Des. 2026</span></li>
-            <li><strong>Elements of AI</strong> — Intro i Building AI <span class="cert-badge">Actiu</span></li>
-            <li><strong>Anthropic Academy</strong> — Building with the Claude API <span class="cert-badge">Actiu</span></li>
-            <li><strong>IBM SkillsBuild</strong> — IA i Dades <span class="cert-badge">Actiu</span></li>
+            <li><strong>Mediterranean Day with PLIKA — Escola Europea</strong> — Certificat MedPorts i Intermodal <span class="cert-badge">Nov. 2026</span></li>
+            <li><strong>Anthropic Academy</strong> — Building with the Claude API <span class="cert-badge">Actiu · 67 lliçons</span></li>
+            <li><strong>Elements of AI (Univ. de Hèlsinki)</strong> — Intro to AI i Building AI <span class="cert-badge">Actiu</span></li>
+            <li><strong>IBM SkillsBuild</strong> — AI Fundamentals, Generative AI i Labs IBM Granite/Pydantic <span class="cert-badge">Actiu</span></li>
           </ul>
         </article>
         <article class="card">
@@ -742,6 +743,25 @@
             <li><strong>JLPT N2 → N1 (Japonès)</strong> <span class="cert-badge">2028–2029</span></li>
             <li><strong>Goethe-Zertifikat B2 / TestDaF (Alemany)</strong> <span class="cert-badge">2028</span></li>
             <li><strong>Ellinomatheia B2/C1 (Grec Modern)</strong> <span class="cert-badge">2028–2029</span></li>
+          </ul>
+        </article>
+      </div>
+
+      <h3 class="subsection-title">Pla d'Aprenentatge Tècnic i IA 2026–2027</h3>
+      <div class="grid">
+        <article class="card">
+          <h3>Itinerari IA Agèntica i Analítica de Supply Chain</h3>
+          <ul class="cert-list">
+            <li><strong>Cua Anthropic Academy:</strong> Model Context Protocol (MCP) · Claude Cowork · Building Effective Human-Agent Teams · AI Capabilities &amp; Limitations</li>
+            <li><strong>Supply Chain Analytics (Python i SQL):</strong> Coursera — <em>Implementing Supply Chain Analytics</em> + eines sintètiques marítimes/ERP a <a class="inline-link" href="https://github.com/HipolitoB/ai-learning-log" target="_blank" rel="noopener noreferrer">ai-learning-log</a> (<em>Container Demurrage</em>, <em>Voyage TCE i EU-ETS</em>, <em>Conciliació PO 3 vies</em>)</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Itinerari Sistemes, Arquitectura i Fonaments Web</h3>
+          <ul class="cert-list">
+            <li><strong>C i Sistemes de Baix Nivell:</strong> Harvard CS50 + enginyeria d'emuladors / recompilació</li>
+            <li><strong>Arquitectura de Computadors i Assemblador:</strong> NAND2Tetris (<em>From Nand to Tetris</em>)</li>
+            <li><strong>Web Moderna i Interfícies:</strong> freeCodeCamp Responsive Web Design (HTML5/CSS) + apps multilingües estàtiques i Base44</li>
           </ul>
         </article>
       </div>
@@ -1232,7 +1252,7 @@
           hour: "numeric",
           hour12: false
         }).format(new Date())
-      );
+      ) % 24;
       if (hour >= 5 && hour < 12) {
         el.textContent = "Καλημέρα!";
       } else if (hour >= 12 && hour < 20) {
