@@ -1,13 +1,12 @@
 ### Hi there 👋
 
-- 🎓 I'm **José Hipólito Baez**, a Dual-Intensive **International Commerce** candidate at **Fundació UAB** (Yr 2 GPA `~9.0/10`), **FUAB Formació Promotion Support Trainee** (`2026–2027`), and **Port Operations** trainee at **Port of Barcelona** (*Forma't al Port*).
+- 🎓 I'm **José Hipólito Baez**, a Dual-Intensive **International Commerce** candidate at **Fundació UAB** (Yr 2 GPA `~8.7/10`), **FUAB Formació Promotion Support Trainee** (`2026–2027`), and **Port Operations** trainee at **Port of Barcelona** (*Forma't al Port*).
 - 🎯 Focused on the intersection of **Maritime Finance · Maritime Corporate Procurement · Supply Chain Analytics & AI**.
 - 🚢 Previously supported purchasing & logistics at **Rosario BZ** (`500+` SKUs, Sage ERP 3-way matching with `-18%` billing discrepancies, and `~4 hrs/wk` saved via Python/Pandas CSV automation).
 - 💻 This is my learning & building space: tracking **Python, Supply Chain Analytics, and AI** in [`ai-learning-log`](https://github.com/HipolitoB/ai-learning-log) (*Harvard CS50x* completed; currently finishing *Elements of AI*, *IBM SkillsBuild*, and *Anthropic Academy*), plus web projects like [**Origen Andino**](https://origenandino.base44.app).
-- 🌏 **Languages I manage & learn** *(510k+ LingQ words · 200k+ Anki reviews · active official-exam sprint)*:
-  - **Working & Business Fluency:** Spanish *(Native)* · English *(`C1`)* · Catalan *(`B2+` Bilingual)*
-  - **Near-N1 / C1–C2 Comprehension (Exam Track):** Japanese *(near-N1 reading · keigo training · JLPT N2/N1 track)* · Modern Greek *(`C1/C2` comp · Ellinomatheia track)* · Mandarin Chinese *(daily study · `C1` comp)* · Korean *(`C1` comp)*
-  - **Additional Reading & Study:** French · Italian · Portuguese · Russian · German *(`B2+` comp)* · Basque *(`A2`)*
+- 🌏 **Languages I manage & learn** *(530k+ LingQ words · 288k+ Anki reviews · active official-exam sprint)*:
+  - **Active Professional Fluency:** Spanish *(Native C2)* · English *(`C1`)* · Japanese *(`C1` · business `keigo`)* · Catalan *(`B2+` Bilingual)* · French *(`B2`)* · Italian *(`B2`)* · Modern Greek *(`B2`)* · Mandarin Chinese *(`B1`)* · Russian *(`B1`)*
+  - **Additional Comprehension & Study:** Hebrew *(`C1` comp)* · Korean *(`C1` comp)* · Portuguese · Latin · Romanian · German · Polish · Czech · Ukrainian · Turkish · Dutch *(`B2–B1` comp)* · Basque & Galician *(`A2/A1`)*
 - 📫 How to reach me: [`hipolitobaez223@gmail.com`](mailto:hipolitobaez223@gmail.com) · [Portfolio](https://hipolitob.github.io/)
 
 ---
