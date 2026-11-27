@@ -11,6 +11,16 @@
 
 ---
 
+## 🚀 Featured Projects & Open-Source Tools:
+
+- 🌐 [**Origen Andino**](https://origenandino.base44.app) — Multilingual Salta high-altitude wine export platform (EU/UK trade analytics, sommelier pairing quiz, shipment tracker & localized ES/RO/GB checkout).
+- ⚓ [**`ai-learning-log`**](https://github.com/HipolitoB/ai-learning-log) — Shipped Python maritime tools ([**Voyage Charter TCE & 2026 EU-ETS Simulator**](https://github.com/HipolitoB/ai-learning-log/blob/main/shipping-projects/voyage-tce-eu-ets-simulator/tce_eu_ets_simulator.py) & [**Container Demurrage Tracker**](https://github.com/HipolitoB/ai-learning-log/blob/main/shipping-projects/container-demurrage-tracker/demurrage_tracker.py)), CO₂ route optimizers, and AI engineering notes.
+- 🏰 [**`aoe2-anki-deck`**](https://github.com/HipolitoB/aoe2-anki-deck) — Fandom MediaWiki dialogue/audio scraper, LingQ CSV→TSV sync & stdlib `.apkg` packager (`2,641` cards across `45` civilizations · [1-Click `.apkg` Releases](https://github.com/HipolitoB/aoe2-anki-deck/releases/latest)).
+- 🗣️ [**`omniglot-anki-deck`**](https://github.com/HipolitoB/omniglot-anki-deck) — Zero-dependency Omniglot phrase & native MP3 scraper (`395+` languages · [10-Language `670`-Card Audio `.apkg` Release](https://github.com/HipolitoB/omniglot-anki-deck/releases/latest)).
+- 📜 [**`sefaria-quote-cli`**](https://github.com/HipolitoB/sefaria-quote-cli) — Bilingual English/Hebrew random quote CLI on the public Sefaria REST API.
+
+---
+
 ## 🌐 Socials:
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jose-hipolito-baez)
